@@ -6,18 +6,16 @@
 </head>
 <body>
     <nav>
-        <a href="@">Статьи</a>
+        <a href="{% url 'posts_page' %}">Статьи</a>
         <a href="@">Программы тренировок</a>
         <a href="@">Трекер</a>
         <a href="@" class="reg">Sign in</a>
     </nav>
     <header>
-            <a href="@"> My coach - Главная </a>
+            <a href="{% url 'index' %}">My coach</a>
         </header>
     <section>
         {% block content %}
         {% endblock %}
     </section>
-    
-
 </body>
