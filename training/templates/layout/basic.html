@@ -1,15 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'training/style.css' %}">
     <title>My Coach - Main</title>
 </head>
 <body>
-    <header>
-        <a> My coach </a>
-    </header>
     <nav>
-        <a> Статьи </a>
-        <a> Программы тренировок </a>
-        <a> Трекер </a>
+        <a href="@">Статьи</a>
+        <a href="@">Программы тренировок</a>
+        <a href="@">Трекер</a>
+        <a href="@" class="reg">Sign in</a>
     </nav>
+    <header>
+            <a href="@"> My coach - Главная </a>
+        </header>
+    <section>
+        {% block content %}
+        {% endblock %}
+    </section>
+    
 
 </body>

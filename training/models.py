@@ -15,6 +15,9 @@ class Post(models.Model):
 class Sport(models.Model):
     name = models.CharField(max_length = 30, verbose_name = 'Вид спорта')
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = 'Вид спорта'
         verbose_name_plural = 'Виды спорта'
