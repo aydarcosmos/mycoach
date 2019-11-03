@@ -2,20 +2,21 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'training/style.css' %}">
-    <title>My Coach - Main</title>
+    <title>My Coach - {% block title %}Main{% endblock %}</title>
 </head>
 <body>
     <nav>
         <a href="{% url 'posts_page' %}">Статьи</a>
         <a href="@">Программы тренировок</a>
         <a href="@">Трекер</a>
-        <a href="@" class="reg">Sign in</a>
+        <a class='reg'>Sign in</a>
     </nav>
     <header>
-            <a href="{% url 'index' %}">My coach</a>
-        </header>
+        <a href="{% url 'index' %}">My coach</a>
+    </header>
     <section>
         {% block content %}
         {% endblock %}
     </section>
+    <script src="{% static 'training/script.js' %}"></script>
 </body>

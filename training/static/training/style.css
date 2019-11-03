@@ -1,7 +1,7 @@
 body {
     width: 1000px;
     margin: 11px auto;
-    background-color: rgb(179, 179, 179);;
+    background: linear-gradient(to right, purple, red, purple);
     font-size: 30px;
 }
 header {
@@ -12,6 +12,12 @@ header {
 header a {
     text-decoration: none;
     text-decoration-color: none;
+    margin: 0.5em 0 0.5em 0;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative; 
+    font-size: 36px;
+    line-height: 40px;
     color: black;
 }
 nav {
@@ -19,27 +25,24 @@ nav {
     text-align: center;
 }
 nav a {
+    font-style: italic;
     font-size: 30px;
     color: black;
     text-decoration: none;
+    padding: 0.1em 0.2em;
 }
 nav a:hover {
     background:silver;
     color: black;
+    background: radial-gradient(red, purple);
+    padding: 0.1em 0.2em;
+    border-radius: 5px;
+
 }
 
 a.reg {
 	color: #fff;
 	user-select: none; /* Убираем текстовое выделение */
 	text-decoration: none;	/* Убираем подчеркивание */
-	background-color: silver; /* Цвет фона */
-    padding: 0.3em 0.3em; /* Отступ от текста до рамки */
-    outline: 2px solid;
-    margin-left: 100px;;
-}
-a.reg:active {
-	background-color: rgb(179, 179, 179); ; /* Цвет кнопки при нажатии */
-}
-a.reg:hover {
-	background-color: silver; /* Цвет кнопки при наведении курсора */
+    margin-left: 100px;
 }
