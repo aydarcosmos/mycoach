@@ -10,3 +10,7 @@ def posts_page(request):
     posts = Post.objects.all()
     context = {'sports': sports, 'posts': posts}
     return render(request, 'training/all_posts.html', context)
+
+
+def sign_in(request):
+    return render(request, 'training/sign_in.html')

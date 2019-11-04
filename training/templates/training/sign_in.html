@@ -1,0 +1,18 @@
+{% extends 'layout/basic.html' %}
+
+{% block title %}
+Sign in
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <p class="title">Sign in page</p>
+    
+    <div class="form">
+        <input class="username" type="text" placeholder="Username" required> <br>
+        <input class="password" type="password" placeholder="Password" required>
+        <div class="login" onclick="alert('Пока не работает')">Login</div>
+        <p class="forgot" onclick="alert('Пока не работает')">Forgot your password</p>
+    </div>
+</div>
+{% endblock %}
